@@ -132,8 +132,6 @@ int WCSimWCTriggerBase::GetPostTriggerWindow(TriggerType_t t)
 void WCSimWCTriggerBase::AdjustNDigitsThresholdForNoise()
 {
   int npmts = this->myDetector->GetTotalNumPmts();
-  G4cout << "npmts = " << npmts << G4endl;
-  assert (0);
   double trigger_window_seconds = ndigitsWindow * 1E-9;
   double dark_rate_Hz = PMTDarkRate * 1000;
   double average_occupancy = dark_rate_Hz * trigger_window_seconds * npmts;
