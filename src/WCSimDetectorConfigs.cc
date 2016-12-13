@@ -27,18 +27,20 @@ void WCSimDetectorConstruction::DOMtest_1()
   WCIDDiameter          = 1.6*m;
   WCIDHeight            = 2.8*m;
   WCBarrelPMTOffset     = WCPMTRadius; //offset from vertical
-  WCPMTperCellHorizontal= 1;
-  WCPMTperCellVertical  = 1;
-  WCBarrelNumPMTHorizontal = 8;
-  WCBarrelNRings           = 3;
-  //WCPMTPercentCoverage  = 1.0;
-  //WCBarrelNumPMTHorizontal = round(WCIDDiameter*sqrt(pi*WCPMTPercentCoverage)/(10.0*WCPMTRadius));
-  //WCBarrelNRings           = round(((WCBarrelNumPMTHorizontal*((WCIDHeight-2*WCBarrelPMTOffset)/(pi*WCIDDiameter)))
+  WCPMTperCellHorizontal= 4;
+  WCPMTperCellVertical  = 3;
+  WCBarrelNumPMTHorizontal  = 150;
+  WCBarrelNRings        = 17.;
+  // WCPMTPercentCoverage  = 1.0;
+  // WCBarrelNumPMTHorizontal = 1;
+  // WCBarrelNRings           = 1;
+  // WCBarrelNumPMTHorizontal = round(WCIDDiameter*sqrt(pi*WCPMTPercentCoverage)/(10.0*WCPMTRadius));
+  // WCBarrelNRings           = round(((WCBarrelNumPMTHorizontal*((WCIDHeight-2*WCBarrelPMTOffset)/(pi*WCIDDiameter)))
   //                                    /WCPMTperCellVertical));
   //WCCapPMTSpacing       = (pi*WCIDDiameter/WCBarrelNumPMTHorizontal); // distance between centers of top and bottom pmts
   //WCCapEdgeLimit        = WCIDDiameter/2.0 - WCPMTRadius;
-  WCCapPMTSpacing       = 1.0*m;
-  WCCapEdgeLimit        = 1.0*m;
+  WCCapPMTSpacing       = 5.0*m;
+  WCCapEdgeLimit        = 5.0*m;
   WCBlackSheetThickness = 1.0*cm;
   WCAddGd               = false;
 }

@@ -11,7 +11,7 @@
 # These are fixed geometries for validation
 #/WCSim/WCgeom SuperK
 
-/WCSim/WCgeom Test
+/WCSim/WCgeom DOMtest_1
 
 # Some other SuperK options:
 #/WCSim/WCgeom SuperK_20inchPMT_20perCent # Note: the actual coverage is 20.27%
@@ -112,15 +112,15 @@
 
 # Or you can use the G4 Particle Gun
 /mygen/generator normal
-/gun/particle e-
-#/gun/particle pi0
-/gun/energy 500 MeV
-/gun/direction 1 0 0 
-/gun/position 0 0 0  
+#/gun/particle e-
+/gun/particle pi0
+/gun/energy 4 GeV
+/gun/direction 0 0 1
+/gun/position 0 0 -1 m
 
 ## change the name of the output root file, default = wcsim.root
 
-/WCSimIO/RootFile wcsim.root
+/WCSimIO/RootFile beamtest.root
 
-/run/beamOn 10
+/run/beamOn 3
 #exit
