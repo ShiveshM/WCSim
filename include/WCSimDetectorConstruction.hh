@@ -67,6 +67,9 @@ public:
   void Cylinder_12inchHPD_15perCent();
   void SetHyperKGeometry();
   void UpdateGeometry();
+
+  void DOMtest_1();
+  void SetTestGeometry();
   
 
   G4String GetDetectorName()      {return WCDetectorName;}
